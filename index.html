@@ -2,125 +2,88 @@
 <html lang="en">
 
 <head>
-
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
   <title>anIDEA-Hub</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet">
-
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
-
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="../../dist/css/normalize.css">
-  <link rel="stylesheet" href="../../dist/css/skeleton.css">
-  <link rel="stylesheet" href="css/custom.css">
-
-  <!-- Scripts
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../anIDEA-Hub/css/custom.css">
   <link rel="icon" type="image/png" href="#">
-
 </head>
 
 <body>
-
   <!-- Navigation -->
   <nav>
-    <ul class="navigation-idea">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="ideas.html">Ideas</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
+    <div class="nav-container">
+      <div class="logo-anidea"><a href="index.html">Logo</a></div>
+      <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+      <ul class="navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="ideas.html">Ideas</a></li>
+        <li><a href="sponsor.html">Sponsorship</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
   </nav>
 
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
-  <div class="section hero">
-    <div class="container">
-      <div class="row">
-        <div class="one-half column">
-          <h4 class="hero-heading">anIdea Hub</h4>
-          <a class="button button-primary" href="#">Acess all ideas so far</a>
-        </div>
-        <div class="one-half column phones">
-          <img class="phone" src="images/iphone.png">
-          <img class="phone" src="images/iphone.png">
-        </div>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="content">
+      <h1>anIdea Hub</h1>
+      <p>A creative platform designed for annotating, sharing, and developing tech ideas, visionary concepts, and
+        innovative projects</p>
+      <div class="button-group">
+        <a class="emailus" href="#" class="button">Help us develop your idea</a>
+        <a href="#" class="button">Access all ideas so far</a>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="section values">
-    <div class="container">
-      <div class="row">
-        <div class="one-third column value">
-          <h2 class="value-multiplier">67%</h2>
-          <h5 class="value-heading">Purchase Increase</h5>
-          <p class="value-description">Percentage of users more likely to purchase on mobile friendly site.</p>
-        </div>
-        <div class="one-third column value">
-          <h2 class="value-multiplier">90%</h2>
-          <h5 class="value-heading">Multi-device Users</h5>
-          <p class="value-description">Most of the world accesses the internet on multiple devices.</p>
-        </div>
-        <div class="one-third column value">
-          <h2 class="value-multiplier">66%</h2>
-          <h5 class="value-heading">Sad Users</h5>
-          <p class="value-description">Percentage of users that are frustrated with page load times.</p>
-        </div>
-      </div>
+  <!-- Values Section -->
+  <section class="values">
+    <div class="value">
+      <h2>1 Idea</h2>
+      <h5>Think of an idea</h5>
+      <p>All those ideas that you have on a daily basis and you let slip away</p>
     </div>
-  </div>
-
-  <div class="section get-help">
-    <div class="container">
-      <h3 class="section-heading">Need help getting started?</h3>
-      <p class="section-description">Skeleton is an amazingly easy place to start with responsive development. If you
-        want to learn more, just visit the documentation!</p>
-      <a class="button button-primary" href="http://getskeleton.com">View Skeleton Docs</a>
+    <div class="value">
+      <h2>2 Collaborate</h2>
+      <h5>Collaborate with at least two</h5>
+      <p>Connect with someone to develop your idea. You need at least another person</p>
     </div>
-  </div>
-
-  <div class="section categories">
-    <div class="container">
-      <h3 class="section-heading">Responsive Images</h3>
-      <p class="section-description">Skeleton images sit easily in grid with .u-max-full-width class. I suggest
-        exploring solution to serving different images based on device size.</p>
-      <div class="row">
-        <div class="one-half column category">
-          <img class="u-max-full-width" src="images/placeholder.png">
-        </div>
-        <div class="one-half column category">
-          <img class="u-max-full-width" src="images/placeholder.png">
-        </div>
-      </div>
+    <div class="value">
+      <h2>3 Prototype or Design</h2>
+      <h5>Make the idea happen</h5>
+      <p>Create a sketch, an MVP product made of simple materials, or find someone to create your first prototype</p>
     </div>
-  </div>
+  </section>
 
+  <!-- Help Section -->
+  <section class="help">
+    <h3>Need help getting started?</h3>
+    <p>anIdea Hub is a great starting point for responsive design. Explore the documentation to learn more!</p>
+    <a class="button" href="#">Learn More</a>
+  </section>
 
-
-
-  <!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- Categories Section -->
+  <section class="categories">
+    <h3>Responsive Images</h3>
+    <p>Explore solutions for serving different images based on device size.</p>
+    <div class="images">
+      <img src="images/placeholder.png" alt="Placeholder Image">
+      <img src="images/placeholder.png" alt="Placeholder Image">
+    </div>
+  </section>
+  <script>
+    // Mobile navigation toggle
+    const navToggle = document.querySelector('.nav-toggle');
+    const navigation = document.querySelector('.navigation');
+    navToggle.addEventListener('click', () => {
+      navigation.classList.toggle('active');
+    });
+  </script>
 </body>
 
 </html>

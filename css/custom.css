@@ -1,184 +1,341 @@
-
-
-/* Shared
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.button {
-  border-radius: 100px;
+/* General Reset */
+body {
+  background-color: #000000;
+  padding: 0px;
+  margin: 0px;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-  }
-  
-nav ul li {
-    margin-right: 20px;
-  }
-  
-nav ul li a {
-    text-decoration: none;
-    color: #000;
-  }
+h1, h2, h3, p, ul, li, a {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #ffffff;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h5 {
+  color: #000000;
+  font-size: 1.2rem;
+}
+
+p {
+margin-bottom:20px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: #007BFF;
+}
+
+/* Navigation */
+.navigation {
+  background-color: #333;
+  padding: 1rem;
+}
+
+.navigation {
+  list-style: none;
+  display: flex;
+  justify-content: left;
+  gap: 1.5rem;
+}
+
+.navigation a {
+  color: white;
+  font-weight: 600;
+}
+
+.navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.navigation ul li {
+  margin-right: 20px;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.logo-anidea {
+  margin-right: 50px;
+  margin-left: 150px;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  background-color: #000000;
+  margin: 0 auto;
+
+  /* Adjust background image */
+  background-image: url('../images/alessandro-bianchi-_kdTyfnUFAc-unsplash.jpg');
+  background-size: contain; /* Make the image smaller */
+  background-repeat: no-repeat; /* Prevent tiling */
+  background-position: right center; /* Position image on the left */
+
+  height: 100vh; /* Full screen height */
+  margin: 0px 150px;
+
+  /* Text Styling */
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  font-size: 2rem;
+}
 
 
-/* Sections
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.section {
-  padding: 8rem 0 7rem;
+.hero .content {
+  max-width: 50%;
+}
+
+.hero .button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #007BFF;
+  color: white;
+  border-radius: 5px;
+}
+
+.button-group a {
+ font-size: 1.5rem;
+margin-left: 30px;
+}
+
+.emailus {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: greenyellow;
+  color: #000000;
+  border-radius: 5px;
+}
+
+.hero .images img {
+  max-width: 800px;
+  margin-left: 1rem;
+}
+
+/* Values Section */
+.values {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  background-color: #eee;
+  padding: 2rem;
+}
+
+.value h2 {
+  font-size: 2.5rem;
+  color: #007BFF;
+}
+
+.value h5 {
+  margin: 0.5rem 0;
+}
+
+.value p {
+  color: #555;
+  max-width: 300px;
+}
+
+/* Help Section */
+.help {
+  text-align: center;
+  padding: 2rem;
+}
+
+.help .button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #007BFF;
+  color: white;
+  border-radius: 5px;
+}
+
+/* Categories Section */
+.categories {
+  padding: 2rem;
   text-align: center;
 }
-.section-heading,
-.section-description {
-  margin-bottom: 1.2rem;
+
+.categories .images {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
 }
 
-/* Hero
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.phones {
-  position: relative;
+.categories img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
 }
-.phone {
-  position: relative;
-  max-width: 80%;
-  margin: 3rem auto -12rem;
+
+
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
 }
-.phone + .phone {
+
+a {
+  text-decoration: none;
+  color: #007BFF;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation */
+nav {
+  background: #333;
+  color: white;
+  padding: 1rem;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-anidea a {
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.navigation {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navigation a {
+  color: white;
+  font-weight: 600;
+}
+
+/* Mobile Navigation */
+.nav-toggle {
   display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 
-.hero-heading {
-  font-family: "Poppins", sans-serif;
-font-style: normal;
+.navigation.active {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #333;
+  width: 100%;
+  padding: 1rem;
 }
 
-/* Values
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Hero Section */
+.hero {
+  padding: 2rem;
+  background-color: #000;
+  color: white;
+  text-align: center;
+}
+
+/* Values Section */
 .values {
-  background-image: url('../images/values-bg.jpg');
-  background-size: cover;
-  color: #fff;
-  padding-bottom: 5rem;
-}
-.value-multiplier {
-  margin-bottom: .5rem;
-  color: #11DFC7;
-}
-.value-heading {
-  margin-bottom: .3rem;
-}
-.value-description {
-  opacity: .8;
-  font-weight: 300;
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+  background-color: #f4f4f4;
+  text-align: center;
 }
 
-/* Help
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.get-help {
-  border-bottom: 1px solid #ddd;
+.values .value {
+  max-width: 30%;
 }
 
-/* Categories
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.values h2 {
+  color: #007BFF;
+}
+
+/* Help Section */
+.help {
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Categories Section */
 .categories {
-  background-image: url('../images/values-bg.jpg');
-  background-size: cover;
-  color: #fff;
-}
-.categories .section-description { 
-  margin-bottom: 4rem;
+  padding: 2rem;
+  text-align: center;
 }
 
-/* Bigger than 550 */
-@media (min-width: 550px) {
-  .section {
-    padding: 12rem 0 11rem;
+.categories .images {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navigation {
+    display: none;
   }
-  .hero {
-    padding-bottom: 12rem;
-    text-align: left;
-    height: 165px;
-  }
-  .phone {
-    position: absolute;
-    top: -7rem;
-    right: 3rem;
-    max-height: 362px;
-    z-index: 3;
-  }
-  .phone + .phone {
-    top: -6rem;
+
+  .nav-toggle {
     display: block;
-    max-width: 73.8%;
-    right: 0;
-    z-index: 2;
-    max-height: 338px;
   }
-  .hero-heading {
-    font-size: 2.4rem;
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-  font-style: normal;
+
+  .values {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .values .value {
+    max-width: 100%;
   }
 }
 
-/* Bigger than 750 */
-@media (min-width: 750px) {
-  .hero {
-    height: 190px;
-  }
-  .hero-heading {
-    font-size: 2.6rem;
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-  font-style: normal;
-  }
-  .section {
-    padding: 14rem 0 15rem;
-  }
-  .hero {
-    padding: 16rem 0 14rem;
-  }
-  .section-description {
-    max-width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .phone {
-    top: -14rem;
-    right: 5rem;
-    max-height: 510px;
-  }
-  .phone + .phone {
-    top: -12rem;
-    max-height: 472px;
-  }
-  .categories {
-    padding: 15rem 0 8rem;
-  }
+.button-group {
+  display: flex;
+  gap: 1rem; /* Space between buttons */
 }
 
-/* Bigger than 1000 */
-@media (min-width: 1000px) {
-  .section {
-    padding: 20rem 0 19rem;
-  }
-  .hero {
-    padding: 22rem 0;
-  }
-  .hero-heading {
-    font-size: 8.0rem;
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-  font-style: normal;
-  }
-  .phone {
-    top: -16rem;
-    max-height: 615px;
-  }
-  .phone + .phone {
-    top: -14rem;
-    max-height: 570px;
-  }
+.button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 600;
 }
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+
